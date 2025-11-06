@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Fredoka', 'Baloo 2', sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .memphis-pattern {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 111, 97, 0.1) 10px, rgba(255, 111, 97, 0.1) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(107, 91, 149, 0.1) 10px, rgba(107, 91, 149, 0.1) 20px);
+  }
+  
+  .zigzag-border {
+    background-image: 
+      linear-gradient(135deg, #FF6F61 25%, transparent 25%),
+      linear-gradient(225deg, #FF6F61 25%, transparent 25%),
+      linear-gradient(45deg, #FF6F61 25%, transparent 25%),
+      linear-gradient(315deg, #FF6F61 25%, transparent 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+  }
+}
